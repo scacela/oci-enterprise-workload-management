@@ -8,5 +8,7 @@ Explore basic OCI-CLI commands by provisioning, altering, querying and deprovisi
 - [OCI-CLI](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#Quickstart)
 
 ### OCI CLI guides
+
 [Set-up Instructions](./oci-cli/setup-instructions.md)
+
 [Compute Instance Lab](./oci-cli/compute-lab.md)
