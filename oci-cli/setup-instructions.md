@@ -67,7 +67,7 @@ chmod 600 ~/.oci/config
 
 #### Step 6. (Validation) Query for and return your Object Storage namespace
 - Note that your OCI user would need sufficient OCI IAM privileges to return this information.
-- Your Object Storage namespace should be equivalent to the name of your tenancy.which should be equivalent to the name of your tenancy.
+- Your Object Storage namespace should be equivalent to the name of your Tenancy.
 <pre>
 oci os ns get
 </pre>
