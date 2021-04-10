@@ -38,13 +38,11 @@ chmod 600 ~/.oci/config
 </pre>
 
 5. See if you can query for and return your Object Storage namespace, which should be equivalent to the name of your tenancy. Note that your OCI user would need sufficient OCI IAM privileges to return this information.
-<details>
-	<summary>
 <pre>
 oci os ns get
 </pre>
-</summary>
-The output:
+<details>
+	<summary>The output</summary>
 <pre>
 {
   "data": "YOUR_OBJECT_STORAGE_NAMESPACE"
@@ -56,11 +54,12 @@ The output:
 oci iam user list
 
 <details>
-<summary>
-	Compute Instance Lab
-</summary>
+	<summary>Compute Instance Lab</summary>
 
-Try out this lab where you explore OCI-CLI. It will involve spinning up a Compute Instance via OCI-CLI. Prerequisites for this lab are:
+### Overview
+Explore basic OCI-CLI commands by provisioning a Compute Instance on OCI, stopping the Compute Instance, verifying its STOPPED status, and then deprovisioning it.
+
+##### Prerequisites
 - Access to a Tenancy
 - OCI-CLI set up on your local machine (see instructions above)
 - Sufficient OCI IAM privileges to READ regions, availability domains, to USE Subnets and Compartments, and to MANAGE Compute Instances as well as Buckets and Objects in Object Storage
@@ -68,13 +67,6 @@ Try out this lab where you explore OCI-CLI. It will involve spinning up a Comput
 <pre>
 cloud.oracle.com > Hamburger Menu > Governance > Limits, Quotas and Usage
 </pre>
-</details>
-
-<details>
-	<summary>Compute Instance Lab</summary>
-
-### Overview
-Explore basic OCI-CLI commands by provisioning a Compute Instance on OCI, stopping the Compute Instance, verifying its STOPPED status, and then deprovisioning it.
 
 ##### Find a Region
 1.	List all regions available to the Tenancy. You will see the keys and the names (a.k.a. identifiers) of the regions. Identify the value of the <b>"name"</b> key of the region where you will deploy the Compute Instance.
