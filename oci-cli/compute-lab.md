@@ -1,7 +1,7 @@
 # Compute Instance Lab: OCI-CLI Basics
 
 #### Overview
-Explore basic OCI-CLI commands by provisioning a Compute Instance on OCI, stopping the Compute Instance, verifying its STOPPED status, and then deprovisioning it.
+Explore basic OCI-CLI commands by provisioning a Compute Instance on OCI, verifying its RUNNING state, stopping the Compute Instance, verifying its STOPPING and STOPPED states, and then deprovisioning it.
 
 #### Prerequisites
 - Access to a Tenancy
@@ -78,19 +78,25 @@ Assemble the information you've gathered to specify deployment details of a Comp
 oci compute instance launch --region REGION_IDENTIFIER --availability-domain AD_NAME --fault-domain FD_NAME --shape VM.Standard.E3.Flex --subnet-id SUBNET_OCID --compartment-id COMPARTMENT_OCID --boot-volume-size-in-gbs 100 --image-id IMAGE_OCID --shape-config '{"ocpus": 24.0}' --display-name test-instance --hostname-label test-instance --metadata '{"ssh_authorized_keys": "SSH_PUBLIC_KEY"}'
 </pre>
 
-#### Step 7. Stop the Compute Instance
-Perform a <b>stop</b> action on the Compute Instance. You can read about the actions you can perform on a Compute Instance [here](https://docs.oracle.com/en-us/iaas/tools/oci-cli/2.22.2/oci_cli_docs/cmdref/compute/instance/action.html).
-<pre>
-oci compute --region REGION_IDENTIFIER instance action --instance-id COMPUTE_INSTANCE_OCID --action stop
-</pre>
-
-#### Step 8. Verify the STOPPED state
-Get information about the Compute Instance, and observe that it is in the <b>STOPPED</b> state, since you have stopped the instance using the previous command.
+#### Step 7. Verify the RUNNING state
+Now that the Compute Instance has been launched, execute the following command to get information about the Compute Instance. Notice it is in the <b>RUNNING</b> state by looking for <b>"RUNNING"</b> as the value of the <b>"lifecycle-state"</b> key.
 <pre>
 oci compute --region REGION_IDENTIFIER instance get --instance-id COMPUTE_INSTANCE_OCID
 </pre>
 
-#### Step 9. Deprovision the Compute Instance
+#### Step 8. Stop the Compute Instance
+Perform a <b>stop</b> action on the Compute Instance. You can read about the actions you can perform on a Compute Instance [here](https://docs.oracle.com/en-us/iaas/tools/oci-cli/2.22.2/oci_cli_docs/cmdref/compute/instance/action.html). The Compute Instance should be reported as being in the STOPPING state upon executing this command. You can verify this by checking that <b>"STOPPING"</b> is the value of the <b>"lifecycle-state"</b> key in the output.
+<pre>
+oci compute --region REGION_IDENTIFIER instance action --instance-id COMPUTE_INSTANCE_OCID --action stop
+</pre>
+
+#### Step 9. Verify the STOPPED state
+After a minute or so, execute the command you entered previously to get information about the Compute Instance. The Compute Instance should be in the <b>STOPPED</b> state. You can verify this by looking for <b>"STOPPED"</b> as the value of the <b>"lifecycle-state"</b> key, since you have stopped the instance using the previous command.
+<pre>
+oci compute --region REGION_IDENTIFIER instance get --instance-id COMPUTE_INSTANCE_OCID
+</pre>
+
+#### Step 10. Deprovision the Compute Instance
 Execute the command to terminate (deprovision) the Compute Instance.
 <pre>
 oci compute --region REGION_IDENTIFIER instance terminate --instance-id COMPUTE_INSTANCE_OCID
