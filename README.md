@@ -49,6 +49,7 @@ oci os ns get
 }
 </pre>
 </details>
+</details>
 
 6. See if you can list all of the users in your tenancy. Again, note that your OCI user would need sufficient OCI IAM privileges to return this information.
 oci iam user list
@@ -148,5 +149,4 @@ Execute the command to terminate (deprovision) the Compute Instance.
 <pre>
 oci compute --region REGION_IDENTIFIER instance terminate --instance-id COMPUTE_INSTANCE_OCID
 </pre>
-</details>
 </details>
