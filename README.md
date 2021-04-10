@@ -1,8 +1,8 @@
-# oci-api-lab
+# oci-api-basics
 Explore basic OCI-CLI commands by provisioning, altering, querying and deprovisioning a Compute Instance on OCI.
 
 
-## Interacting with OCI APIs
+### Interacting with OCI APIs
 
 - [SDKs](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdks.htm)
 - [OCI-CLI](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#Quickstart)
