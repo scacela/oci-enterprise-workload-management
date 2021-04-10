@@ -1,14 +1,4 @@
-# oci-api-guide
-Explore basic OCI-CLI commands by provisioning, altering, querying and deprovisioning a Compute Instance on OCI.
-
-
-### Interacting with OCI APIs
-
-- [SDKs](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdks.htm)
-- [OCI-CLI](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#Quickstart)
-	
-<details>
-	<summary>You can also set up OCI-CLI by following these steps</summary>
+# Setup Instructions for OCI-CLI
 
 1. Create the directory whose name and location is reserved for OCI-CLI.
 <pre>
@@ -52,6 +42,3 @@ oci os ns get
 
 6. See if you can list all of the users in your tenancy. Again, note that your OCI user would need sufficient OCI IAM privileges to return this information.
 oci iam user list
-</details>
-
-[Compute Instance Lab](./oci-cli-compute-lab.md)
