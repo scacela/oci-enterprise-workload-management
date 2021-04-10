@@ -54,7 +54,6 @@ oci os ns get
 oci iam user list
 <details>
 <summary>Compute Instance Lab</summary>
-</details>
 
 ### Overview
 Explore basic OCI-CLI commands by provisioning a Compute Instance on OCI, stopping the Compute Instance, verifying its STOPPED status, and then deprovisioning it.
@@ -149,4 +148,5 @@ Execute the command to terminate (deprovision) the Compute Instance.
 <pre>
 oci compute --region REGION_IDENTIFIER instance terminate --instance-id COMPUTE_INSTANCE_OCID
 </pre>
+</details>
 </details>
