@@ -52,6 +52,8 @@ oci os ns get
 
 6. See if you can list all of the users in your tenancy. Again, note that your OCI user would need sufficient OCI IAM privileges to return this information.
 oci iam user list
+</details>
+
 <details>
 <summary>Compute Instance Lab</summary>
 
@@ -102,7 +104,7 @@ You can proceed to the next step.
 ##### Step 5. Create an SSH key pair
 Create an SSH public key pair on your machine.
 <details>
-<summary>Unix-based OS</summary>
+	<summary>Unix-based OS</summary>
 If you are using a Unix-based OS, follow these instructions:
 
 5.1. Create a directory called <b>~/.ssh</b> if it does not already exist. This is the default save location for an SSH key pair.
@@ -148,5 +150,4 @@ Execute the command to terminate (deprovision) the Compute Instance.
 <pre>
 oci compute --region REGION_IDENTIFIER instance terminate --instance-id COMPUTE_INSTANCE_OCID
 </pre>
-</details>
 </details>
