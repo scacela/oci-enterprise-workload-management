@@ -3,7 +3,7 @@ Examples, references and set-up instructions for users who are looking to levera
 
 ### SDKs
 
-- [SDKs - Oracle Docs](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdks.htm) | Official Oracle docs covering Software Development Kits and Command Line Interface
+- [SDKs - Oracle Docs](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdks.htm) | Official Oracle docs covering SDK and CLI guides
 
 
 ### OCI CLI
