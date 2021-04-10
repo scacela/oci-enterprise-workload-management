@@ -7,30 +7,30 @@ mkdir ~/.oci
 
 ### Step 2. Install OCI-CLI
 <details>
-	<summay>Linux or Oracle Linux 8</summay>
+	<summary>Linux or Oracle Linux 8</summary>
 	If you are using a Linux or Oracle Linux 8, install OCI-CLI with this command.
 <pre>
 bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
 </pre>
 </details>
 <details>
-	<summay>Oracle Linux 7</summay>
+	<summary>Oracle Linux 7</summary>
 	If you are using a Oracle Linux 7, install OCI-CLI with yum.
 <pre>
 sudo yum install python36-oci-cli
 </pre>
 </details>
 <details>
-	<summay>Mac OS</summay>
+	<summary>Mac OS</summary>
 	If you are using a MAC OS, install OCI-CLI with homebrew.
 <pre>
 brew update && brew install oci-cli
 </pre>
 </details>
 <details>
-	<summay>Windows</summay>
+	<summary>Windows</summary>
 	If you are using Windows, please refer to the Windows section in the Quickstart from the Oracle documentation.
-	
+
 [Quickstart - Oracle Docs](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#Quickstart)
 </details>
 
