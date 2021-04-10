@@ -1,10 +1,9 @@
 # OCI API Guide
 Examples, references and set-up instructions for users who are looking to leverage Oracle Cloud APIs.
 
-### Oracle Documentation - Interacting with OCI APIs
+### SDKs
 
-- [SDKs](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdks.htm)
-
+- [SDKs - Oracle Docs](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdks.htm)
 
 ### OCI CLI
 
