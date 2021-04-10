@@ -7,8 +7,8 @@ Explore basic OCI-CLI commands by provisioning, altering, querying and deprovisi
 - [SDKs](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdks.htm)
 - [OCI-CLI](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#Quickstart)
 	
-<default>
-<summary>You can also set up OCI-CLI by following these steps</summary>
+<details>
+	<summary>You can also set up OCI-CLI by following these steps</summary>
 
 1. Create the directory whose name and location is reserved for OCI-CLI.
 <pre>
