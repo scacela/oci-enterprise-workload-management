@@ -7,6 +7,6 @@ Examples, references and set-up instructions for users who are looking to levera
 
 ### OCI CLI
 
-- [Quickstart - Oracle Docs](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#Quickstart)
-- [Quickstart - Custom](./oci-cli/setup-instructions.md)
-- [Compute Instance Lab](./oci-cli/compute-lab.md)
+- [Quickstart - Oracle Docs](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#Quickstart) | Official, detailed Oracle documentation
+- [Quickstart - Custom](./oci-cli/setup-instructions.md) | For rapid set-up
+- [Compute Instance Lab](./oci-cli/compute-lab.md) | Covering OCI-CLI basics
