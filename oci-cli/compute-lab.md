@@ -60,11 +60,12 @@ mkdir -p ~/.ssh
 ssh-keygen
 </pre>
 
-5.3. Press Enter to choose the default options. With the default options, your SSH key pair will have no passphrase, consist of an SSH public key file named <b>id_rsa.pub</b>, and an SSH private key file named <b>id_rsa</b>. These files will exist in the <b>~/.ssh</b> directory.
+5.3. Press Enter to choose the default options. With the default options, your SSH key pair will have no passphrase, consist of an SSH public key file named <b>id_rsa.pub</b>, and an SSH private key file named <b>id_rsa</b>. These files will exist in the <b>\~/.ssh</b> directory.
 </details>
 <details>
 	<summary>Windows</summary>
-	If you are using Windows, please refer to these [instructions](https://docs.joyent.com/public-cloud/getting-started/ssh-keys/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows).
+
+If you are using Windows, please refer to these [instructions](https://docs.joyent.com/public-cloud/getting-started/ssh-keys/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows).
 </details>
 </details>
 

@@ -22,7 +22,7 @@ oci setup keys
 - Click <b>Paste Public Key</b>
 - Paste your public key, <b>~/.oci/oci_api_key_public.pem</b> into the field
 - Click <b>Add</b>
-- Copy the contents of <b>Configuration File Preview</b> to your clipboard, and paste them into a file on your machine called ~/.oci/config. The name and location of this file is reserved for OCI. Be sure to update the value that gets assigned to key_file with the path to your private key file (by default, <b>~/.oci/oci_api_key.pem</b>)
+- Copy the contents of <b>Configuration File Preview</b> to your clipboard, and paste them into a file on your machine called <b>\~/.oci/config</b>. The name and location of this file is reserved for OCI. Be sure to update the value that gets assigned to key_file with the path to your private key file (by default, <b>\~/.oci/oci_api_key.pem</b>)
 
 ### Step 4. Set the appropriate permissions on certain files
 <pre>
