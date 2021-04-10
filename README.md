@@ -3,10 +3,11 @@ Examples, references and set-up instructions for users who are looking to levera
 
 ### SDKs
 
-- [SDKs - Oracle Docs](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdks.htm)
+- [SDKs - Oracle Docs](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdks.htm) | Official Oracle documentation covering Software Development Kits and Command Line Interface
+
 
 ### OCI CLI
 
-- [Quickstart - Oracle Docs](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#Quickstart) | Official Oracle documentation for set-up of OCI-CLI
+- [Quickstart - Oracle Docs](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#Quickstart) | Official Oracle documentation covering set-up of OCI-CLI
 - [Quickstart - Fast](./oci-cli/setup-instructions.md) | Instructions for rapid set-up of OCI-CLI
 - [Compute Instance Lab](./oci-cli/compute-lab.md) | Lab covering OCI-CLI basics. Deploy a Compute Instance via OCI-CLI!
