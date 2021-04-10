@@ -52,9 +52,8 @@ oci os ns get
 
 6. See if you can list all of the users in your tenancy. Again, note that your OCI user would need sufficient OCI IAM privileges to return this information.
 oci iam user list
-
 <details>
-	<summary>Compute Instance Lab</summary>
+<summary>Compute Instance Lab</summary>
 
 ### Overview
 Explore basic OCI-CLI commands by provisioning a Compute Instance on OCI, stopping the Compute Instance, verifying its STOPPED status, and then deprovisioning it.
@@ -123,7 +122,6 @@ ssh-keygen
 	If you are using Windows, please refer to these [instructions](https://docs.joyent.com/public-cloud/getting-started/ssh-keys/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows).
 </details>
 </details>
-</details>
 
 ##### Step 6. Provision the Compute Instance
 Assemble the information you've gathered to specify deployment details of a Compute Instance, and execute the command to create (provision) the Compute Instance. Some parameters are filled in with sample values. If you wish to deploy a shape that is not a <b>Flex shape</b>, be sure to omit the <b>--shape-config</b> flag and parameter from this command. Identify the value of the <b>"id"</b> key of the Compute Instance, once the information about the Compute Instance is returned upon deployment.
@@ -150,4 +148,5 @@ Execute the command to terminate (deprovision) the Compute Instance.
 <pre>
 oci compute --region REGION_IDENTIFIER instance terminate --instance-id COMPUTE_INSTANCE_OCID
 </pre>
+</details>
 </details>
