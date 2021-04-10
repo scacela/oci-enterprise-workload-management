@@ -102,26 +102,27 @@ You can proceed to the next step.
 
 ##### Step 5. Create an SSH key pair
 Create an SSH public key pair on your machine.
-	<details>
-		<summary>Unix-based OS</summary>
-		If you are using a Unix-based OS, follow these instructions:
+<details>
+<summary>Unix-based OS</summary>
+If you are using a Unix-based OS, follow these instructions:
 
-		5.1. Create a directory called <b>~/.ssh</b> if it does not already exist. This is the default save location for an SSH key pair.
-		<pre>
-		mkdir -p ~/.ssh
-		</pre>
+5.1. Create a directory called <b>~/.ssh</b> if it does not already exist. This is the default save location for an SSH key pair.
+<pre>
+mkdir -p ~/.ssh
+</pre>
 
-		5.2. Create the SSH key pair.
-		<pre>
-		ssh-keygen
-		</pre>
+5.2. Create the SSH key pair.
+<pre>
+ssh-keygen
+</pre>
 
-		5.3. Press Enter to choose the default options. With the default options, your SSH key pair will have no passphrase, consist of an SSH public key file named <b>id_rsa.pub</b>, and an SSH private key file named <b>id_rsa</b>. These files will exist in the <b>~/.ssh</b> directory.
-	</details>
-	<details>
-		<summary>Windows</summary>
-		If you are using Windows, please refer to these [instructions](https://docs.joyent.com/public-cloud/getting-started/ssh-keys/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows).
-	</details>
+5.3. Press Enter to choose the default options. With the default options, your SSH key pair will have no passphrase, consist of an SSH public key file named <b>id_rsa.pub</b>, and an SSH private key file named <b>id_rsa</b>. These files will exist in the <b>~/.ssh</b> directory.
+</details>
+<details>
+	<summary>Windows</summary>
+	If you are using Windows, please refer to these [instructions](https://docs.joyent.com/public-cloud/getting-started/ssh-keys/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows).
+</details>
+</details>
 </details>
 
 ##### Step 6. Provision the Compute Instance
@@ -149,5 +150,4 @@ Execute the command to terminate (deprovision) the Compute Instance.
 <pre>
 oci compute --region REGION_IDENTIFIER instance terminate --instance-id COMPUTE_INSTANCE_OCID
 </pre>
-</details>
 </details>
