@@ -8,34 +8,32 @@ mkdir ~/.oci
 #### Step 2. Install OCI-CLI
 <details>
 	<summary>Linux or Oracle Linux 8</summary>
-	<p></p>
-	If you are using a Linux or Oracle Linux 8, install OCI-CLI with this command.
+
+If you are using a Linux or Oracle Linux 8, install OCI-CLI with this command.
 <pre>
 bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
 </pre>
 </details>
 <details>
 	<summary>Oracle Linux 7</summary>
-	<p></p>
-	If you are using a Oracle Linux 7, install OCI-CLI with yum.
+
+If you are using a Oracle Linux 7, install OCI-CLI with yum.
 <pre>
 sudo yum install python36-oci-cli
 </pre>
 </details>
 <details>
 	<summary>Mac OS</summary>
-	<p></p>
-	If you are using a MAC OS, install OCI-CLI with homebrew.
+
+If you are using a MAC OS, install OCI-CLI with homebrew.
 <pre>
 brew update && brew install oci-cli
 </pre>
 </details>
 <details>
 	<summary>Windows</summary>
-	<p></p>
-	If you are using Windows, please refer to the <b>Windows</b> section in the Quickstart from the Oracle documentation.
 
-[Quickstart - Oracle Docs](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#Quickstart)
+If you are using Windows, please refer to the <b>Windows</b> section in the [Quickstart from the Oracle documentation](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#Quickstart).
 </details>
 
 #### Step 3. Create an API signing key pair
