@@ -4,11 +4,14 @@
 <pre>
 mkdir ~/.oci
 </pre>
-2. Create an API signing key pair in ~/.oci (i.e. 1 x public, 1 x private).
+
+### Step 2. Create an API signing key pair
+The following command will create an API signing key pair (i.e. 1 x public, 1 x private) in <b>\~/.oci</b>.
 <pre>
 oci setup keys
 </pre>
-3. Register the public API signing key to your User page in OCI
+
+### Step 3. Register the public API signing key to your User page in OCI
 
 - Navigate to cloud.oracle.com
 - Sign into OCI with your Tenancy credentials
