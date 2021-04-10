@@ -1,4 +1,4 @@
-# oci-api-basics
+# oci-api-guide
 Explore basic OCI-CLI commands by provisioning, altering, querying and deprovisioning a Compute Instance on OCI.
 
 
