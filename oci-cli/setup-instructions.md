@@ -1,6 +1,6 @@
 # Setup Instructions for OCI-CLI
 
-1. Create the directory whose name and location is reserved for OCI-CLI.
+### Step 1. Create the directory whose name and location is reserved for OCI-CLI.
 <pre>
 mkdir ~/.oci
 </pre>
@@ -21,13 +21,13 @@ oci setup keys
 - Click <b>Add</b>
 - Copy the contents of <b>Configuration File Preview</b> to your clipboard, and paste them into a file on your machine called ~/.oci/config. The name and location of this file is reserved for OCI. Be sure to update the value that gets assigned to key_file with the path to your private key file (by default, <b>~/.oci/oci_api_key.pem</b>)
 
-4. Set the appropriate permissions on certain files
+### Step 4. Set the appropriate permissions on certain files
 <pre>
 chmod 600 ~/.oci/oci_api_key.pem
 chmod 600 ~/.oci/config
 </pre>
 
-5. See if you can query for and return your Object Storage namespace, which should be equivalent to the name of your tenancy. Note that your OCI user would need sufficient OCI IAM privileges to return this information.
+### Step 5. See if you can query for and return your Object Storage namespace, which should be equivalent to the name of your tenancy. Note that your OCI user would need sufficient OCI IAM privileges to return this information.
 <pre>
 oci os ns get
 </pre>
@@ -40,5 +40,5 @@ oci os ns get
 </pre>
 </details>
 
-6. See if you can list all of the users in your tenancy. Again, note that your OCI user would need sufficient OCI IAM privileges to return this information.
+### Step 6. See if you can list all of the users in your tenancy. Again, note that your OCI user would need sufficient OCI IAM privileges to return this information.
 oci iam user list
