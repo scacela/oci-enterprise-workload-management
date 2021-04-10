@@ -38,7 +38,9 @@ oci iam fault-domain list --region REGION_IDENTIFIER --availability-domain AD_NA
 ### Do you have an SSH key pair?
 <details>
 <summary>Yes</summary>
+
 You can proceed to the next step.
+
 </details>
 
 <details>
