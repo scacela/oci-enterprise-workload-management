@@ -33,7 +33,7 @@ brew update && brew install oci-cli
 <details>
 	<summary>Windows</summary>
 	<p></p>
-	If you are using Windows, please refer to the Windows section in the Quickstart from the Oracle documentation.
+	If you are using Windows, please refer to the <b>Windows</b> section in the Quickstart from the Oracle documentation.
 
 [Quickstart - Oracle Docs](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#Quickstart)
 </details>
