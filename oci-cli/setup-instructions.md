@@ -30,7 +30,9 @@ chmod 600 ~/.oci/oci_api_key.pem
 chmod 600 ~/.oci/config
 </pre>
 
-#### Step 5. See if you can query for and return your Object Storage namespace, which should be equivalent to the name of your tenancy. Note that your OCI user would need sufficient OCI IAM privileges to return this information.
+#### Step 5. Query for and return your Object Storage namespace
+- Note that your OCI user would need sufficient OCI IAM privileges to return this information.
+- Your Object Storage namespace should be equivalent to the name of your tenancy.which should be equivalent to the name of your tenancy.
 <pre>
 oci os ns get
 </pre>
@@ -43,5 +45,5 @@ oci os ns get
 </pre>
 </details>
 
-#### Step 6. See if you can list all of the users in your tenancy. Again, note that your OCI user would need sufficient OCI IAM privileges to return this information.
-oci iam user list
+#### Step 6. Query for all of the users in your tenancy.
+- Note that your OCI user would need sufficient OCI IAM privileges to return this information.
