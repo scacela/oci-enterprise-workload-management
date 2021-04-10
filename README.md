@@ -1,6 +1,5 @@
 # oci-api-guide
-Explore basic OCI-CLI commands by provisioning, altering, querying and deprovisioning a Compute Instance on OCI.
-
+Examples, references and set-up instructions for users who are looking to leverage Oracle Cloud APIs.
 
 ### Oracle Documentation - Interacting with OCI APIs
 
