@@ -49,12 +49,12 @@ oci os ns get
 }
 </pre>
 </details>
-</details>
 
 6. See if you can list all of the users in your tenancy. Again, note that your OCI user would need sufficient OCI IAM privileges to return this information.
 oci iam user list
 <details>
 <summary>Compute Instance Lab</summary>
+</details>
 
 ### Overview
 Explore basic OCI-CLI commands by provisioning a Compute Instance on OCI, stopping the Compute Instance, verifying its STOPPED status, and then deprovisioning it.
