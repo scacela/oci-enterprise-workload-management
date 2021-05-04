@@ -289,6 +289,7 @@ regions=(us-ashburn-1 us-phoenix-1 ap-osaka-1) # add to list as needed
 
 # <b>search across all compartments</b>
 # compartments=($(oci iam compartment list --compartment-id-in-subtree true | jq .data[].id | sed 's/\"//g'));
+
 # <b>or instead, search across fewer compartments</b> (e.g. use first compartment id from subcommand output that contains string: samuel)
 compartment_id_1=$(export name=samuel; oci iam compartment list --compartment-id-in-subtree true | jq '.data[] | select(.name|contains(env.name)).id + "    " + .name' | sed 's/\"//g' | head -1 | awk '{print $1}')
 # compartment_id_2=COMPARTMENT_OCID_2 # add compartment_id_n variables as needed
