@@ -110,6 +110,7 @@ e.g. Some action (print the time) occurs 60 times with frequency of 1/1.0s
 <summary>
 Unix-based OS
 </summary>
+
 <pre>
 cooldown=1.0
 maxreps=60
@@ -121,6 +122,7 @@ for i in $(seq 1 ${maxreps}); do echo -e $i $(date '+%H:%M:%S%1N')'\nsleep' ${co
 <summary>
 Microsoft Powershell
 </summary>
+
 <pre>
 1..60 | %{echo "$_ $(Get-Date -Format HH:mm:ss.fff)"; echo "sleep 1.0`n"; sleep 1.0}
 </pre>
@@ -131,6 +133,7 @@ Microsoft Powershell
 <summary>
 Linux
 </summary>
+
 <pre>
 for i in {31..37}; \
 do echo -e "\e[${i}mecho -e '\\\e[${i}m'"; \
@@ -141,6 +144,8 @@ done; echo -e "\e[0mecho -e '\\\e[0m' #DEFAULT"
 <details>
 <summary>
 Mac OS (or older Bash)
+</summary>
+
 <pre>
 for i in {31..37}; \
 do echo -e "\033[0;${i}mecho -e '\\\033[0;${i}m'"; \
@@ -219,11 +224,13 @@ oci os object bulk-upload --src-dir ${path_of_upload_folder} -bn ${bucket_name}
 </pre>
 
 ### Get image name given image OCID and Region
+e.g. In region us-ashburn-1, find the name associated with a sample image ocid
+
 <details>
 <summary>
 Dependencies: oci-cli, jq
 </summary>
-e.g. In region us-ashburn-1, find the name associated with a sample image ocid
+
 <pre>
 region=us-ashburn-1
 image_id=ocid1.image.oc1.iad.aaaaaaaaatmaaxweorpdp6uumrj7neogyu5uqs34qp4acq4opsullqxnxmmq
@@ -235,7 +242,7 @@ oci compute image --region ${region} get --image-id ${image_id} | jq '.data."dis
 <summary>
 Dependencies: oci-cli
 </summary>
-e.g. In region us-ashburn-1, find the name associated with a given image ocid
+
 <pre>
 region=us-ashburn-1
 image_id=ocid1.image.oc1.iad.aaaaaaaaatmaaxweorpdp6uumrj7neogyu5uqs34qp4acq4opsullqxnxmmq
