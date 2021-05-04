@@ -170,7 +170,7 @@ region=YOUR_REGION_IDENTIFIER
 key_file=PATH_TO_API_PRIVATE_KEY_FILE
 </pre>
 
-### Get Tenancy s3 Compartment OCID for AWS API compatibility
+### Get Tenancy S3 Compartment OCID for AWS API compatibility
 Dependencies: oci-cli, jq
 <pre>
 oci os ns get-metadata | jq '.data."default-s3-compartment-id"' | sed 's/\"//g'
