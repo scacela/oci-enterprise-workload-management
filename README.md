@@ -300,9 +300,8 @@ compartment_id=$(export name=samuel; oci iam compartment list --compartment-id-i
 
 # <b>OR use your own Compartment OCID</b>
 
-# uncomment the next two lines and replace COMPARTMENT_OCID with your own Compartment OCID
-# compartment_id=COMPARTMENT_OCID
-# compartments=(${compartment_id})
+# uncomment the next line and replace COMPARTMENT_OCID with your own Compartment OCID
+# compartments=(COMPARTMENT_OCID)
 
 # colors
 color_region="\033[36m" # Mac OS color. Newer Bash equivalent: "\e[36m"
