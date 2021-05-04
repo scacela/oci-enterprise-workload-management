@@ -106,48 +106,47 @@ scp -i ${ssh_key_path} -r ~/.ssh ${host}:${path}
 
 ### Repetitive output (Unix-based OS)
 e.g. Some action (print the time) occurs 60 times with frequency of 1/1.0s
+<details>
 <summary>
 Unix-based OS
-<detail>
+</summary>
 <pre>
 cooldown=1.0
 maxreps=60
 for i in $(seq 1 ${maxreps}); do echo -e $i $(date '+%H:%M:%S%1N')'\nsleep' ${cooldown}s'\n';  sleep ${cooldown}s; done;
 </pre>
-</detail>
-</summary>
+</details>
 
+<details>
 <summary>
 Microsoft Powershell
-<detail>
+</summary>
 <pre>
 1..60 | %{echo "$_ $(Get-Date -Format HH:mm:ss.fff)"; echo "sleep 1.0`n"; sleep 1.0}
 </pre>
-	</detail>
-</summary>
+</details>
 
 ### Get commands for Bash colors
+<details>
 <summary>
 Linux
-<detail>
+</summary>
 <pre>
 for i in {31..37}; \
 do echo -e "\e[${i}mecho -e '\\\e[${i}m'"; \
 done; echo -e "\e[0mecho -e '\\\e[0m' #DEFAULT"
 </pre>
-</detail>
-</summary>
+</details>
 
+<details>
 <summary>
 Mac OS (or older Bash)
-<detail>
 <pre>
 for i in {31..37}; \
 do echo -e "\033[0;${i}mecho -e '\\\033[0;${i}m'"; \
 done; echo -e "\033[0mecho -e '\\\033[0m' #DEFAULT"
 </pre>
-</detail>
-</summary>
+</details>
 
 ## API Operations with OCI-CLI and Shell Scripting
 This section includes sets of instructions that can be used to perform relatively complex tasks. The dependencies for running most of these sets of instructions are:
@@ -220,9 +219,10 @@ oci os object bulk-upload --src-dir ${path_of_upload_folder} -bn ${bucket_name}
 </pre>
 
 ### Get image name given image OCID and Region
+<details>
 <summary>
 Dependencies: oci-cli, jq
-<details>
+</summary>
 e.g. In region us-ashburn-1, find the name associated with a sample image ocid
 <pre>
 region=us-ashburn-1
@@ -230,11 +230,11 @@ image_id=ocid1.image.oc1.iad.aaaaaaaaatmaaxweorpdp6uumrj7neogyu5uqs34qp4acq4opsu
 oci compute image --region ${region} get --image-id ${image_id} | jq '.data."display-name"'
 </pre>
 </details>
-</summary>
 
+<details>
 <summary>
 Dependencies: oci-cli
-<details>
+</summary>
 e.g. In region us-ashburn-1, find the name associated with a given image ocid
 <pre>
 region=us-ashburn-1
@@ -242,7 +242,6 @@ image_id=ocid1.image.oc1.iad.aaaaaaaaatmaaxweorpdp6uumrj7neogyu5uqs34qp4acq4opsu
 oci compute image --region ${region} get --image-id ${image_id} | grep display-name
 </pre>
 </details>
-</summary>
 
 ### Get VCN OCID given VCN display name, Compartment OCID and Region
 Dependencies: oci-cli, jq
