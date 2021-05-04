@@ -286,12 +286,14 @@ export tag_value=samuel
 # regions=($(oci iam region list | jq .data[].name | sed 's/\"//g'))
 # search across fewer regions
 regions=(us-ashburn-1 us-phoenix-1 ap-osaka-1) # add to list as needed
-# search across all compartments
+\
+# <b>search across all compartments</b>
 # compartments=($(oci iam compartment list --compartment-id-in-subtree true | jq .data[].id | sed 's/\"//g'));
-# search across fewer compartments (e.g. use first compartment id from subcommand output that contains string: samuel 
+# <b>or instead, search across fewer compartments</b> (e.g. use first compartment id from subcommand output that contains string: samuel)
 compartment_id_1=$(export name=samuel; oci iam compartment list --compartment-id-in-subtree true | jq '.data[] | select(.name|contains(env.name)).id + "    " + .name' | sed 's/\"//g' | head -1 | awk '{print $1}')
 # compartment_id_2=COMPARTMENT_OCID_2 # add compartment_id_n variables as needed
 compartments=(${compartment_id_1}) # add to list as needed
+\
 # colors
 color_region="\033[36m" # Mac OS color. Newer Bash equivalent: "\e[36m"
 color_compartment="\033[35m" # Mac OS color. Newer Bash equivalent: "\e[35m"
