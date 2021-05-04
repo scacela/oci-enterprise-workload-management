@@ -45,7 +45,7 @@ For users who are looking to interact with and leverage Oracle Cloud APIs to the
 - [Microsoft Word shortcuts for Mac OS](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-word-95ef89dd-7142-4b50-afb2-f762f663ceb2#PickTab=macOS) |Select your OS from the tabs on this page to see shortcuts specific to your OS
 
 ### Basic CLI commands
-- [Unix-based](https://www.tjhsst.edu/~dhyatt/superap/unixcmd.html)
+- [Unix-based](http://mally.stanford.edu/~sr/computing/basic-unix.html)
 
 - [Microsoft Powershell](https://devblogs.microsoft.com/scripting/table-of-basic-powershell-commands/)
 
