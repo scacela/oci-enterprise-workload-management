@@ -21,7 +21,7 @@ For users who are looking to interact with and leverage Oracle Cloud APIs to the
 
 - [SDKs - Oracle Docs](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdks.htm) | Official Oracle docs covering SDK and CLI guides
 
-### OCI CLI
+### OCI-CLI
 
 - [Quickstart - Oracle Docs](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#Quickstart) | Official Oracle docs covering set-up of OCI-CLI
 
