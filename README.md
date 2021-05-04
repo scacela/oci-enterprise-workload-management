@@ -288,12 +288,21 @@ export tag_value=samuel
 regions=(us-ashburn-1 us-phoenix-1 ap-osaka-1) # add to list as needed
 
 # <b>search across all compartments</b>
+
+# uncomment the next line
 # compartments=($(oci iam compartment list --compartment-id-in-subtree true | jq .data[].id | sed 's/\"//g'));
 
-# <b>or instead, search across fewer compartments</b> (e.g. use first compartment id from subcommand output that contains string: samuel)
-compartment_id_1=$(export name=samuel; oci iam compartment list --compartment-id-in-subtree true | jq '.data[] | select(.name|contains(env.name)).id + "    " + .name' | sed 's/\"//g' | head -1 | awk '{print $1}')
-# compartment_id_2=COMPARTMENT_OCID_2 # add compartment_id_n variables as needed
-compartments=(${compartment_id_1}) # add to list as needed
+# <b>OR use the Compartment OCID of the first Compartment whose name contains the string: samuel</b>
+
+# uncomment the next two lines
+compartment_id=$(export name=samuel; oci iam compartment list --compartment-id-in-subtree true | jq '.data[] | select(.name|contains(env.name)).id + "    " + .name' | sed 's/\"//g' | head -1 | awk '{print $1}')
+# compartments=(${compartment_id})
+
+# <b>OR use your own Compartment OCID</b>
+
+# uncomment the next two lines and replace COMPARTMENT_OCID with your own Compartment OCID
+# compartment_id=COMPARTMENT_OCID
+# compartments=(${compartment_id})
 
 # colors
 color_region="\033[36m" # Mac OS color. Newer Bash equivalent: "\e[36m"
