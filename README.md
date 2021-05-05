@@ -25,9 +25,9 @@ For users who are looking to interact with and leverage Oracle Cloud APIs to the
 
 - [Quickstart - Oracle Docs](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#Quickstart) | Official Oracle docs covering set-up of OCI-CLI
 
-- [Quickstart - Fast](./OCI-CLI/setup-instructions.md) | Instructions for rapid set-up of OCI-CLI
+- [Quickstart - Fast](./oci-cli/setup-instructions.md) | Instructions for rapid set-up of OCI-CLI
 
-- [Compute Instance Lab](./OCI-CLI/compute-lab.md) | Lab covering OCI-CLI basics. Deploy a Compute Instance via OCI-CLI!
+- [Compute Instance Lab](./oci-cli/compute-lab.md) | Lab covering OCI-CLI basics. Deploy a Compute Instance via OCI-CLI!
 
 ### Terraform
 - [Setup - Oracle Docs](https://docs.oracle.com/en-us/iaas/developer-tutorials/tutorials/tf-provider/01-summary.htm) | Official Oracle docs covering set-up of OCI Terraform
@@ -155,9 +155,9 @@ done; echo -e "\033[0mecho -e '\\\033[0m' #DEFAULT"
 
 ## API Operations with OCI-CLI and Shell Scripting
 This section includes sets of instructions that can be used to perform relatively complex tasks. The dependencies for running most of these sets of instructions are:
-- A Unix-based OS
-- oci-cli
-- jq (for installation instructions, please refer to the [Developer Tools](#developer-tools) section.
+- a Unix-based OS
+- [oci-cli](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#Quickstart)
+- [jq](https://stedolan.github.io/jq/)
 
 ### OCI API Profile template
 A prerequisite for using OCI-CLI. Default location: <b>\~/.oci/config</b>. The following example is a template for a default profile, using the reserved header: <b>[DEFAULT]</b>
