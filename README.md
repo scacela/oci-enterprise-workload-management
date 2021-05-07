@@ -8,7 +8,7 @@ Examples, references and set-up instructions for smoother operations.
 - [Developer Tools](#developer-tools)
 - [OCI Information](#oci-information)
 - [Network Connectivity Options](#network-connectivity-options)
-- [Free OCI Features](#free-oci-features)
+- [Low-No Cost OCI Features](#low-no-cost-oci-features)
 - [Shell Operations](#shell-operations)
 - [API Operations with OCI-CLI and Shell Scripting](#api-operations-with-oci-cli-and-shell-scripting)
 - [Scheduled API Operations with OCI-CLI](#scheduled-api-operations-with-oci-cli)
@@ -81,9 +81,11 @@ The 3 FastConnect connectivity models can be found [here](https://www.oracle.com
 
 VPN Connect best practices for network connectivity as of Feb 2020 are shown in [this Oracle Whitepaper](https://docs.cloud.oracle.com/en-us/iaas/Content/Resources/Assets/whitepapers/ipsec-vpn-best-practices.pdf), which shows architectures modeled with consideration of design principles with VPN Connect, and VPN Connect over FastConnect. The architectures shown here do not require an <b>Internet Gateway</b>, but use a <b>Dynamic Routing Gateway</b>.
 
-## Free OCI Features
+## Low-No Cost OCI Features
+Leverage free or low cost features of OCI.
+* See [pricing page](https://www.oracle.com/cloud/price-list.html) for the price of Functions
 
-<b>Events</b> and <b>Functions</b> are two kinds of resources that you can use to automate Tenancy management processes (using code deployments in Functions) based on state changes of resources (which can be tracked by Events) throughout your Tenancy.
+<b>Events</b> and <b>Functions\*</b> are two kinds of resources that you can use to automate Tenancy management processes (using code deployments in Functions) based on state changes of resources (which can be tracked by Events) throughout your Tenancy.
 
 <b>Notifications</b> is a resource that can be used to broadcasts messages to you (e.g. by email).
 
@@ -93,6 +95,8 @@ VPN Connect best practices for network connectivity as of Feb 2020 are shown in 
 
 <b>Tagging</b> is a service that enables you to add (key, value)-style metadata to your resources to help you manage resources by this metadata.
 Budgets is a resource that can be used to notify you by email when you reach a spending quantity that you define for a set of resources that you define.
+
+\* Functions pricing
 
 ## Shell Operations
 
