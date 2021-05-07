@@ -93,7 +93,8 @@ Leverage free or low cost resources in OCI. Please refer to the [pricing page](h
 <b>Health Checks</b> is a resource that enables external monitoring to determine availability and performance of public facing resources.
 
 <b>Tagging</b> is a service that enables you to add (key, value)-style metadata to your resources to help you manage resources by this metadata.
-Budgets is a resource that can be used to notify you by email when you reach a spending quantity that you define for a set of resources that you define.
+
+<b>Budgets</b> is a resource that can be used to notify you by email when you reach a spending quantity that you define for a set of resources that you define. You can track the cost of your resources that are tagged using Defined Tags, which are offered as part of the Tagging service.
 
 ## Shell Operations
 
