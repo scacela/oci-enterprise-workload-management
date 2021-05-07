@@ -82,8 +82,7 @@ The 3 FastConnect connectivity models can be found [here](https://www.oracle.com
 VPN Connect best practices for network connectivity as of Feb 2020 are shown in [this Oracle Whitepaper](https://docs.cloud.oracle.com/en-us/iaas/Content/Resources/Assets/whitepapers/ipsec-vpn-best-practices.pdf), which shows architectures modeled with consideration of design principles with VPN Connect, and VPN Connect over FastConnect. The architectures shown here do not require an <b>Internet Gateway</b>, but use a <b>Dynamic Routing Gateway</b>.
 
 ## Low-No Cost OCI Features
-Leverage free or low cost features of OCI.
-* See [pricing page](https://www.oracle.com/cloud/price-list.html) for the price of Functions
+Leverage free or low cost resources in OCI. Please refer to the [pricing page](https://www.oracle.com/cloud/price-list.html) to see the price of any resources that are marked with <b>\*</b>. All other resources are free.
 
 <b>Events</b> and <b>Functions\*</b> are two kinds of resources that you can use to automate Tenancy management processes (using code deployments in Functions) based on state changes of resources (which can be tracked by Events) throughout your Tenancy.
 
@@ -95,8 +94,6 @@ Leverage free or low cost features of OCI.
 
 <b>Tagging</b> is a service that enables you to add (key, value)-style metadata to your resources to help you manage resources by this metadata.
 Budgets is a resource that can be used to notify you by email when you reach a spending quantity that you define for a set of resources that you define.
-
-\* Functions pricing
 
 ## Shell Operations
 
