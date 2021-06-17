@@ -347,7 +347,7 @@ Dependencies: oci-cli, jq
 e.g. Get ocids of compartments whose display names contain string: <b>samuel</b>
 <pre>
 export name=samuel
-oci iam compartment list --compartment-id-in-subtree true | jq '.data[] | select(.name|contains(env.name)).id + "    " + .name' | sed 's/\"//g'
+oci iam compartment list --compartment-id-in-subtree true --all | jq '.data[] | select(.name|contains(env.name)).id + "    " + .name' | sed 's/\"//g'
 </pre>
 
 ### Get Compute Instance details given Compute Instance OCID and Region
